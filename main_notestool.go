@@ -1,23 +1,27 @@
 package main
 
+import "fmt"
+
 func main() {
 
-	encoding, message := getInput()
+notesList := // this where the storage would go
+	encoding := getInput()
 	var result string
 
 	switch encoding {
-	case "Show notes.":
-		result = s
 
-	case "Add a note.":
-		result = 
-
-	case "Delete a note.":
-	result =
-
- 	case "Exit.":
-	result =
-	
+	case "1":
+		ShowNotes(notesList)
+	case "2":
+		newNote := AddNote()
+		notesList = append(notesList, newNote)
+		SaveNotes(collectionName, notesList)
+	case "3":
+		notesList = DeleteNote(notesList)
+		SaveNotes(notesList)
+	case "4":
+		fmt.Println("Goodbye!")
+		return
 	}
 
 }
