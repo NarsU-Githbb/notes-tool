@@ -2,8 +2,8 @@ Tool for managing & storing notes
 
 How does it work:
 
-1. Clone the depository writing "git clone https://gitea.kood.tech/anssipeltoniemi/notes.git" into the terminal.
-2. Go to the depository directory called notes & write "go run . [name of your storage]" to use the tool.
+1. Clone the depository.
+2. Go to the depository directory called notes-tool & write "go run . [name of your storage]" to use the tool.
 3. You can choose between 5 different operations: show notes, add note, delete note, exit & delete all notes.
 4. Use dedicated numbers shown in front of operations for choosing what you want to do next.
 5. The tool will automatically store your notes in the given [storage name] .txt file for future usage.
